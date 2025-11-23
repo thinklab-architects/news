@@ -112,7 +112,7 @@ elements.clearFilters.addEventListener('click', () => {
 loadDocuments();
 
 function bootstrapLayout() {
-  document.title = '高雄建築師公會公告快覽';
+  document.title = '社團法人高雄市建築師公會公告快覽';
   const template = document.createElement('template');
   template.innerHTML = `
     <div class="top-bar shell">
@@ -130,10 +130,10 @@ function bootstrapLayout() {
     <header class="hero">
       <div class="shell hero__inner">
         <div class="hero__lede">
-          <p class="hero__eyebrow"><span class="hero__eyebrow-abbr">KAA</span>高雄建築師公會</p>
+          <p class="hero__eyebrow"><span class="hero__eyebrow-abbr">KAA</span>社團法人高雄市建築師公會</p>
           <h1 class="hero__title">最新消息</h1>
           <p class="hero__description">
-            掌握高雄建築師公會最新公告，手機與平板皆可輕鬆瀏覽。
+            掌握社團法人高雄市建築師公會最新公告，手機與平板皆可輕鬆瀏覽。
           </p>
           <div class="hero__actions">
             <a
@@ -194,7 +194,7 @@ function bootstrapLayout() {
             href="https://www.kaa.org.tw/"
             target="_blank"
             rel="noopener noreferrer"
-          >高雄建築師公會</a>
+          >社團法人高雄市建築師公會</a>
           ｜GitHub Pages 自動佈署。
         </p>
         <p id="updatedAt" class="footer-updated" aria-live="polite">資料更新：尚未更新</p>
