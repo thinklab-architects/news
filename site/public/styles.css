@@ -564,12 +564,24 @@ button:focus-visible {
 .footer-copy {
   margin: 0;
   font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .footer-updated {
   margin: 0;
   font-size: 0.9rem;
   font-weight: 600;
+}
+
+.footer-logo {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  object-fit: contain;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.1);
 }
 
 .button {

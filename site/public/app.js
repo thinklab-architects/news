@@ -252,6 +252,7 @@ function bootstrapLayout() {
       <div class="shell footer-inner">
         <p class="footer-copy">
           資料來源：
+          <img class="footer-logo" src="./logo.png" alt="" aria-hidden="true" />
           <a
             href="https://www.kaa.org.tw/"
             target="_blank"
