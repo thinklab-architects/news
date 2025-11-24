@@ -35,10 +35,21 @@ const elements = {
   previewDownload: document.getElementById('previewDownload'),
 };
 
+function buildPreviewUrl(url) {
+  if (!url) return '';
+  const lower = url.toLowerCase();
+  const isPdf =
+    lower.includes('.pdf') ||
+    lower.startsWith('data:application/pdf');
+  return isPdf
+    ? `https://docs.google.com/gview?embedded=1&url=${encodeURIComponent(url)}`
+    : url;
+}
+
 function openPreview(url, label) {
   if (!url || !elements.previewModal) return;
 
-  elements.previewFrame.src = url;
+  elements.previewFrame.src = buildPreviewUrl(url);
   elements.previewTitle.textContent = label || '附件預覽';
   elements.previewDownload.href = url;
 
