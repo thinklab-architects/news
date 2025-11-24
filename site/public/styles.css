@@ -130,7 +130,7 @@ a:focus-visible {
 
 .hero__lede {
   display: grid;
-  gap: 0.6rem;
+  gap: 0.35rem;
 }
 
 .hero__eyebrow {
@@ -149,15 +149,17 @@ a:focus-visible {
 
 .hero__title {
   margin: 0;
-  font-size: clamp(2.4rem, 6vw, 3.6rem);
-  font-weight: 700;
+  font-size: clamp(2.6rem, 6vw, 4.4rem);
+  font-weight: 800;
   letter-spacing: -0.01em;
+  line-height: 1.05;
 }
 
 .hero__subtitle {
   margin: 0;
-  font-size: 1.08rem;
+  font-size: 1.15rem;
   font-weight: 700;
+  line-height: 1.2;
   letter-spacing: 0.12em;
   color: var(--ink-soft);
 }
