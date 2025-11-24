@@ -173,7 +173,7 @@ function bootstrapLayout() {
       <div class="shell hero__inner">
         <div class="hero__lede">
           <p class="hero__eyebrow"><span class="hero__eyebrow-abbr">KAA</span>社團法人高雄市建築師公會</p>
-          <h1 class="hero__title">NEWS｜高雄建築師公會</h1>
+          <h1 class="hero__title">NEWS</h1>
           <p class="hero__subtitle">最新消息</p>
           <p class="hero__description">
             掌握高雄建築師公會最新公告，手機與平板皆可輕鬆瀏覽。

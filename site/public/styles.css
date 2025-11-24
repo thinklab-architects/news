@@ -640,7 +640,9 @@ button:focus-visible {
 .modal__close {
   appearance: none;
   border: 1px solid var(--glass-border);
-  background: rgba(255, 255, 255, 0.9);
+  background: #ffffff;
+  color: #111111;
+  font-weight: 700;
   border-radius: 50%;
   width: 40px;
   height: 40px;
