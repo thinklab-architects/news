@@ -7,7 +7,7 @@
       content="width=device-width, initial-scale=1, viewport-fit=cover"
     />
     <meta name="theme-color" content="#e2e5eb" />
-    <title>社團法人高雄市建築師公會公告快覽</title>
+    <title>KAA社團法人高雄市建築師公會 | NEWS</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -27,14 +27,15 @@
       <div class="shell hero__inner">
         <div class="hero__lede">
           <p class="hero__eyebrow"><span class="hero__eyebrow-abbr">KAA</span>社團法人高雄市建築師公會</p>
-          <h1 class="hero__title">最新消息</h1>
+          <h1 class="hero__title">NEWS</h1>
+          <p class="hero__subtitle">最新消息</p>
           <p class="hero__description">
-            掌握社團法人高雄市建築師公會最新公告，手機與平板皆可輕鬆瀏覽。
+            掌握高雄建築師公會最新公告，手機與平板皆可輕鬆瀏覽。
           </p>
           <div class="hero__actions">
             <a
               class="hero__link"
-              href="https://www.kaa.org.tw/public_list_1.php?t=0&amp;search_input1=&amp;search_input2=&amp;search_input3=&amp;b=1"
+              href="https://www.kaa.org.tw/public_list_1.php?t=0&search_input1=&search_input2=&search_input3=&b=1"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -67,9 +68,9 @@
           <label class="field-label" for="sortSelect">排序方式</label>
           <select id="sortSelect">
             <option value="deadline-asc">截止日期最接近</option>
-            <option value="deadline-desc">截止日期最晚</option>
-            <option value="date-desc">最新公告在前</option>
-            <option value="date-asc">最早公告在前</option>
+            <option value="deadline-desc">截止日期最遠</option>
+            <option value="date-desc">最新公告優先</option>
+            <option value="date-asc">最舊公告優先</option>
           </select>
         </div>
 
@@ -77,10 +78,31 @@
       </section>
 
       <section aria-live="polite">
-        <div id="status" class="status">資料載入中...</div>
+        <div id="status" class="status">資料讀取中...</div>
         <div id="documentList" class="document-grid" hidden></div>
       </section>
     </main>
+
+    <div id="previewModal" class="modal" aria-hidden="true">
+      <div class="modal__backdrop" data-close="true"></div>
+      <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="previewTitle">
+        <div class="modal__header">
+          <div>
+            <p class="modal__eyebrow">附件預覽</p>
+            <h2 id="previewTitle">附件預覽</h2>
+          </div>
+          <button id="previewClose" class="modal__close" type="button" aria-label="關閉預覽">×</button>
+        </div>
+        <div class="modal__body">
+          <iframe id="previewFrame" title="附件預覽" loading="lazy"></iframe>
+          <div class="modal__actions">
+            <a id="previewOpen" class="button ghost" href="#" target="_blank" rel="noopener noreferrer">在新分頁開啟</a>
+            <a id="previewDownload" class="button" href="#" download>下載</a>
+          </div>
+          <p class="modal__hint">若無法顯示，請使用瀏覽器開啟或下載檔案。</p>
+        </div>
+      </div>
+    </div>
 
     <footer class="app-footer">
       <div class="shell footer-inner">
@@ -91,9 +113,9 @@
             target="_blank"
             rel="noopener noreferrer"
           >社團法人高雄市建築師公會</a>
-          ｜GitHub Pages 自動佈署。
+          ，由 GitHub Pages 自動部署。
         </p>
-        <p id="updatedAt" class="footer-updated" aria-live="polite">資料更新：尚未更新</p>
+        <p id="updatedAt" class="footer-updated" aria-live="polite">資料更新：尚未載入</p>
       </div>
     </footer>
 

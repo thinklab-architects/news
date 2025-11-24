@@ -4,7 +4,7 @@ const BADGE_TEXT = {
   'due-soon': '即將截止',
   active: '截止未到',
   expired: '已截止',
-  'no-deadline': '無截止日',
+  'no-deadline': '未提供截止日',
 };
 
 const DEFAULT_STATUS_VALUES = ['due-soon', 'active'];
@@ -28,7 +28,47 @@ const elements = {
   sortSelect: document.getElementById('sortSelect'),
   clearFilters: document.getElementById('clearFilters'),
   updatedAt: document.getElementById('updatedAt'),
+  previewModal: document.getElementById('previewModal'),
+  previewFrame: document.getElementById('previewFrame'),
+  previewTitle: document.getElementById('previewTitle'),
+  previewClose: document.getElementById('previewClose'),
+  previewOpen: document.getElementById('previewOpen'),
+  previewDownload: document.getElementById('previewDownload'),
 };
+
+function openPreview(url, label) {
+  if (!url || !elements.previewModal) return;
+
+  elements.previewFrame.src = url;
+  elements.previewTitle.textContent = label || '附件預覽';
+  elements.previewOpen.href = url;
+  elements.previewDownload.href = url;
+
+  elements.previewModal.classList.add('modal--open');
+  elements.previewModal.setAttribute('aria-hidden', 'false');
+  document.body.classList.add('modal-open');
+}
+
+function closePreview() {
+  if (!elements.previewModal) return;
+  elements.previewModal.classList.remove('modal--open');
+  elements.previewModal.setAttribute('aria-hidden', 'true');
+  elements.previewFrame.src = '';
+  document.body.classList.remove('modal-open');
+}
+
+elements.previewClose?.addEventListener('click', closePreview);
+elements.previewModal?.addEventListener('click', (event) => {
+  if (event.target.dataset.close === 'true') {
+    closePreview();
+  }
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && elements.previewModal?.classList.contains('modal--open')) {
+    closePreview();
+  }
+});
 
 const statusCheckboxes = Array.from(
   document.querySelectorAll('input[name="statusFilter"]'),
@@ -66,12 +106,12 @@ statusCheckboxes.forEach((checkbox) => {
 
 syncStatusCheckboxes();
 
-elements.searchInput.addEventListener('input', (event) => {
+elements.searchInput?.addEventListener('input', (event) => {
   state.filters.search = event.target.value.trim();
   render();
 });
 
-elements.searchInput.addEventListener('keydown', (event) => {
+elements.searchInput?.addEventListener('keydown', (event) => {
   if (event.key === 'Escape') {
     event.preventDefault();
     if (elements.searchInput.value) {
@@ -82,13 +122,12 @@ elements.searchInput.addEventListener('keydown', (event) => {
   }
 });
 
-
-elements.sortSelect.addEventListener('change', (event) => {
+elements.sortSelect?.addEventListener('change', (event) => {
   state.filters.sort = event.target.value;
   render();
 });
 
-elements.clearFilters.addEventListener('click', () => {
+elements.clearFilters?.addEventListener('click', () => {
   const hasSearch = Boolean(state.filters.search);
   const hasSort = state.filters.sort !== 'deadline-asc';
   const hasStatusChange =
@@ -103,8 +142,13 @@ elements.clearFilters.addEventListener('click', () => {
   state.filters.sort = 'deadline-asc';
   resetStatusFilters();
 
-  elements.searchInput.value = '';
-  elements.sortSelect.value = 'deadline-asc';
+  if (elements.searchInput) {
+    elements.searchInput.value = '';
+  }
+
+  if (elements.sortSelect) {
+    elements.sortSelect.value = 'deadline-asc';
+  }
 
   render();
 });
@@ -112,7 +156,7 @@ elements.clearFilters.addEventListener('click', () => {
 loadDocuments();
 
 function bootstrapLayout() {
-  document.title = '社團法人高雄市建築師公會公告快覽';
+  document.title = 'KAA社團法人高雄市建築師公會 | NEWS';
   const template = document.createElement('template');
   template.innerHTML = `
     <div class="top-bar shell">
@@ -131,14 +175,15 @@ function bootstrapLayout() {
       <div class="shell hero__inner">
         <div class="hero__lede">
           <p class="hero__eyebrow"><span class="hero__eyebrow-abbr">KAA</span>社團法人高雄市建築師公會</p>
-          <h1 class="hero__title">最新消息</h1>
+          <h1 class="hero__title">NEWS</h1>
+          <p class="hero__subtitle">最新消息</p>
           <p class="hero__description">
-            掌握社團法人高雄市建築師公會最新公告，手機與平板皆可輕鬆瀏覽。
+            掌握高雄建築師公會最新公告，手機與平板皆可輕鬆瀏覽。
           </p>
           <div class="hero__actions">
             <a
               class="hero__link"
-              href="https://www.kaa.org.tw/public_list_1.php?t=0&amp;search_input1=&amp;search_input2=&amp;search_input3=&amp;b=1"
+              href="https://www.kaa.org.tw/public_list_1.php?t=0&search_input1=&search_input2=&search_input3=&b=1"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -171,9 +216,9 @@ function bootstrapLayout() {
           <label class="field-label" for="sortSelect">排序方式</label>
           <select id="sortSelect">
             <option value="deadline-asc">截止日期最接近</option>
-            <option value="deadline-desc">截止日期最晚</option>
-            <option value="date-desc">最新公告在前</option>
-            <option value="date-asc">最早公告在前</option>
+            <option value="deadline-desc">截止日期最遠</option>
+            <option value="date-desc">最新公告優先</option>
+            <option value="date-asc">最舊公告優先</option>
           </select>
         </div>
 
@@ -181,10 +226,31 @@ function bootstrapLayout() {
       </section>
 
       <section aria-live="polite">
-        <div id="status" class="status">資料載入中...</div>
+        <div id="status" class="status">資料讀取中...</div>
         <div id="documentList" class="document-grid" hidden></div>
       </section>
     </main>
+
+    <div id="previewModal" class="modal" aria-hidden="true">
+      <div class="modal__backdrop" data-close="true"></div>
+      <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="previewTitle">
+        <div class="modal__header">
+          <div>
+            <p class="modal__eyebrow">附件預覽</p>
+            <h2 id="previewTitle">附件預覽</h2>
+          </div>
+          <button id="previewClose" class="modal__close" type="button" aria-label="關閉預覽">×</button>
+        </div>
+        <div class="modal__body">
+          <iframe id="previewFrame" title="附件預覽" loading="lazy"></iframe>
+          <div class="modal__actions">
+            <a id="previewOpen" class="button ghost" href="#" target="_blank" rel="noopener noreferrer">在新分頁開啟</a>
+            <a id="previewDownload" class="button" href="#" download>下載</a>
+          </div>
+          <p class="modal__hint">若無法顯示，請使用瀏覽器開啟或下載檔案。</p>
+        </div>
+      </div>
+    </div>
 
     <footer class="app-footer">
       <div class="shell footer-inner">
@@ -195,9 +261,9 @@ function bootstrapLayout() {
             target="_blank"
             rel="noopener noreferrer"
           >社團法人高雄市建築師公會</a>
-          ｜GitHub Pages 自動佈署。
+          ，由 GitHub Pages 自動部署。
         </p>
-        <p id="updatedAt" class="footer-updated" aria-live="polite">資料更新：尚未更新</p>
+        <p id="updatedAt" class="footer-updated" aria-live="polite">資料更新：尚未載入</p>
       </div>
     </footer>
 
@@ -207,7 +273,7 @@ function bootstrapLayout() {
 }
 
 function formatUpdatedAt(isoString) {
-  if (!isoString) return '資料更新：尚未更新';
+  if (!isoString) return '資料更新：尚未載入';
 
   const formatter = new Intl.DateTimeFormat('zh-TW', {
     dateStyle: 'medium',
@@ -221,7 +287,6 @@ function formatUpdatedAt(isoString) {
     return `資料更新：${isoString}`;
   }
 }
-
 
 function parseDate(value) {
   if (!value) return null;
@@ -253,7 +318,7 @@ function enrichDocument(doc) {
   const deadlineDate = parseDate(doc.deadline);
   const today = getTaipeiToday();
 
-  let deadlineCategory = 'no-deadline';
+  let deadlineCategory = 'active';
   let daysUntilDeadline = null;
 
   if (deadlineDate && today) {
@@ -281,19 +346,23 @@ function enrichDocument(doc) {
 }
 
 function formatDeadlineNote(doc) {
+  if (!doc.deadlineDate) {
+    return '未提供截止日';
+  }
+
   if (doc.daysUntilDeadline == null) {
-    return '無截止日';
+    return '未提供截止日';
   }
 
   if (doc.daysUntilDeadline < 0) {
-    return `逾期 ${Math.abs(doc.daysUntilDeadline)} 天`;
+    return `超過 ${Math.abs(doc.daysUntilDeadline)} 天`;
   }
 
   if (doc.daysUntilDeadline === 0) {
     return '今天截止';
   }
 
-  return `剩餘 ${doc.daysUntilDeadline} 天`;
+  return `還有 ${doc.daysUntilDeadline} 天`;
 }
 
 function sortDocuments(documents) {
@@ -378,7 +447,7 @@ function applyFilters() {
 
   if (state.filters.statuses.size) {
     results = results.filter((doc) =>
-      state.filters.statuses.has(doc.deadlineCategory ?? 'no-deadline'),
+      state.filters.statuses.has(doc.deadlineCategory ?? 'active'),
     );
   }
 
@@ -389,12 +458,12 @@ function updateStatus(filtered, total) {
   elements.status.classList.remove('status--error');
 
   if (total === 0) {
-    elements.status.textContent = '目前尚未取得公告，請稍候重試。';
+    elements.status.textContent = '目前暫無公告，請稍後再試。';
     return;
   }
 
   if (filtered === 0) {
-    elements.status.textContent = '沒有符合篩選條件的公告。';
+    elements.status.textContent = '沒有符合條件的公告。';
     return;
   }
 
@@ -434,15 +503,23 @@ function createAttachmentList(doc) {
   const list = document.createElement('div');
   list.className = 'attachment-list';
 
-  doc.attachments?.forEach((attachment, index) => {
-    const link = document.createElement('a');
-    link.className = 'attachment-link';
-    link.href = attachment.url;
-    link.target = '_blank';
-    link.rel = 'noopener noreferrer';
-    link.textContent =
-      attachment.label?.trim() || `附件 ${String(index + 1).padStart(2, '0')}`;
-    list.appendChild(link);
+  doc.attachments.forEach((attachment, index) => {
+    const wrapper = document.createElement('div');
+    wrapper.className = 'attachment-chip';
+
+    const label = attachment.label?.trim() || `附件 ${String(index + 1).padStart(2, '0')}`;
+    const labelSpan = document.createElement('span');
+    labelSpan.className = 'attachment-chip__label';
+    labelSpan.textContent = label;
+
+    const action = document.createElement('button');
+    action.type = 'button';
+    action.className = 'attachment-chip__action';
+    action.textContent = '下載';
+    action.addEventListener('click', () => openPreview(attachment.url, label));
+
+    wrapper.append(labelSpan, action);
+    list.appendChild(wrapper);
   });
 
   return list;
@@ -457,7 +534,7 @@ function createDocumentCard(doc) {
 
   const badge = document.createElement('span');
   badge.className = `badge badge--${doc.deadlineCategory}`;
-  badge.textContent = BADGE_TEXT[doc.deadlineCategory] ?? '狀態不明';
+  badge.textContent = BADGE_TEXT[doc.deadlineCategory] ?? '狀態未知';
   header.appendChild(badge);
 
   if (doc.date) {
@@ -466,7 +543,7 @@ function createDocumentCard(doc) {
 
     const issuedLabel = document.createElement('span');
     issuedLabel.className = 'document-card__label';
-    issuedLabel.textContent = '行文日期';
+    issuedLabel.textContent = '行文日';
 
     const issuedTime = document.createElement('time');
     issuedTime.dateTime = doc.date;
@@ -478,7 +555,7 @@ function createDocumentCard(doc) {
 
   const title = document.createElement('h2');
   title.className = 'document-card__title';
-  const subjectText = doc.subject?.trim() || '未提供主旨';
+  const subjectText = doc.subject?.trim() || '尚無主旨';
 
   if (doc.subjectUrl) {
     const link = document.createElement('a');
@@ -495,6 +572,8 @@ function createDocumentCard(doc) {
   metaList.className = 'document-card__meta';
 
   const deadlineContent = document.createElement('div');
+  deadlineContent.className = 'deadline-wrapper';
+
   if (doc.deadline) {
     const deadlineTime = document.createElement('time');
     deadlineTime.dateTime = doc.deadline;
@@ -504,18 +583,16 @@ function createDocumentCard(doc) {
     deadlineNote.className = 'deadline-note';
     deadlineNote.textContent = formatDeadlineNote(doc);
 
-    deadlineContent.className = 'deadline-wrapper';
     deadlineContent.append(deadlineTime, deadlineNote);
   } else {
-    deadlineContent.className = 'deadline-wrapper';
     const deadlineNote = document.createElement('span');
     deadlineNote.className = 'deadline-note';
-    deadlineNote.textContent = '無截止日';
+    deadlineNote.textContent = '未提供截止日';
     deadlineContent.append(deadlineNote);
   }
 
   metaList.append(
-    createMetaItem('截止日期', deadlineContent),
+    createMetaItem('截止日', deadlineContent),
     createMetaItem('附件', createAttachmentList(doc)),
   );
 
@@ -560,7 +637,7 @@ async function loadDocuments() {
     setDocumentListVisibility(state.filtered.length > 0);
   } catch (error) {
     console.error('Unable to load documents', error);
-    elements.status.textContent = '資料載入失敗，請檢查網路或稍後再試。';
+    elements.status.textContent = '資料讀取異常，請檢查網路後再試。';
     elements.status.classList.add('status--error');
   }
 }
