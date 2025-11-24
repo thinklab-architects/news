@@ -257,7 +257,13 @@ function bootstrapLayout() {
             target="_blank"
             rel="noopener noreferrer"
           >社團法人高雄市建築師公會</a>
-          ，由 GitHub Pages 自動部署。
+          | 資訊委員會監製 |
+          <a
+            href="https://www.tlabarc.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Thinklab Architects 之物建築</a>
+          製作 | 由 GitHub Pages 自動部署 |
         </p>
         <p id="updatedAt" class="footer-updated" aria-live="polite">資料更新：尚未載入</p>
       </div>
