@@ -251,20 +251,26 @@ function bootstrapLayout() {
     <footer class="app-footer">
       <div class="shell footer-inner">
         <p class="footer-copy">
-          資料來源：
-          <img class="footer-logo" src="./logo.png" alt="" aria-hidden="true" />
-          <a
-            href="https://www.kaa.org.tw/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >社團法人高雄市建築師公會</a>
-          | 資訊委員會監製 |
-          <a
-            href="https://www.tlabarc.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >Thinklab Architects 之物建築</a>
-          製作 | 由 GitHub Pages 自動部署 |
+          <span>
+            資料來源：
+            <img class="footer-logo" src="./logo.png" alt="" aria-hidden="true" />
+            <a
+              href="https://www.kaa.org.tw/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >社團法人高雄市建築師公會</a>
+            |
+          </span>
+          <span>資訊委員會監製 |</span>
+          <span>
+            <a
+              href="https://www.tlabarc.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Thinklab Architects 之物建築</a>
+            製作 |
+          </span>
+          <span>由 GitHub Pages 自動部署 |</span>
         </p>
         <p id="updatedAt" class="footer-updated" aria-live="polite">資料更新：尚未載入</p>
       </div>
