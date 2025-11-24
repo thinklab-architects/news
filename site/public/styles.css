@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700;800&display=swap');
+
 :root {
   color-scheme: light;
   font-family: 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
@@ -153,6 +155,7 @@ a:focus-visible {
   font-weight: 800;
   letter-spacing: -0.01em;
   line-height: 1.05;
+  font-family: 'Space Grotesk', 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
 }
 
 .hero__subtitle {
