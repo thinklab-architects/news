@@ -32,7 +32,6 @@ const elements = {
   previewFrame: document.getElementById('previewFrame'),
   previewTitle: document.getElementById('previewTitle'),
   previewClose: document.getElementById('previewClose'),
-  previewOpen: document.getElementById('previewOpen'),
   previewDownload: document.getElementById('previewDownload'),
 };
 
@@ -41,7 +40,6 @@ function openPreview(url, label) {
 
   elements.previewFrame.src = url;
   elements.previewTitle.textContent = label || '附件預覽';
-  elements.previewOpen.href = url;
   elements.previewDownload.href = url;
 
   elements.previewModal.classList.add('modal--open');
@@ -156,7 +154,7 @@ elements.clearFilters?.addEventListener('click', () => {
 loadDocuments();
 
 function bootstrapLayout() {
-  document.title = 'KAA社團法人高雄市建築師公會 | NEWS';
+  document.title = 'NEWS｜高雄建築師公會';
   const template = document.createElement('template');
   template.innerHTML = `
     <div class="top-bar shell">
@@ -175,7 +173,7 @@ function bootstrapLayout() {
       <div class="shell hero__inner">
         <div class="hero__lede">
           <p class="hero__eyebrow"><span class="hero__eyebrow-abbr">KAA</span>社團法人高雄市建築師公會</p>
-          <h1 class="hero__title">NEWS</h1>
+          <h1 class="hero__title">NEWS｜高雄建築師公會</h1>
           <p class="hero__subtitle">最新消息</p>
           <p class="hero__description">
             掌握高雄建築師公會最新公告，手機與平板皆可輕鬆瀏覽。
@@ -244,8 +242,7 @@ function bootstrapLayout() {
         <div class="modal__body">
           <iframe id="previewFrame" title="附件預覽" loading="lazy"></iframe>
           <div class="modal__actions">
-            <a id="previewOpen" class="button ghost" href="#" target="_blank" rel="noopener noreferrer">在新分頁開啟</a>
-            <a id="previewDownload" class="button" href="#" download>下載</a>
+            <a id="previewDownload" class="button" href="#" target="_blank" rel="noopener noreferrer">下載</a>
           </div>
           <p class="modal__hint">若無法顯示，請使用瀏覽器開啟或下載檔案。</p>
         </div>
@@ -318,7 +315,7 @@ function enrichDocument(doc) {
   const deadlineDate = parseDate(doc.deadline);
   const today = getTaipeiToday();
 
-  let deadlineCategory = 'active';
+  let deadlineCategory = 'no-deadline';
   let daysUntilDeadline = null;
 
   if (deadlineDate && today) {
@@ -447,7 +444,7 @@ function applyFilters() {
 
   if (state.filters.statuses.size) {
     results = results.filter((doc) =>
-      state.filters.statuses.has(doc.deadlineCategory ?? 'active'),
+      state.filters.statuses.has(doc.deadlineCategory ?? 'no-deadline'),
     );
   }
 
