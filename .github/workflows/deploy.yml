@@ -1,5 +1,9 @@
 name: Deploy website
 
+# Note: GitHub automatically disables scheduled workflows after 60 days of
+# repository inactivity. If the schedule stops, push a commit or manually
+# trigger via workflow_dispatch to re-enable it.
+
 on:
   push:
     branches:
