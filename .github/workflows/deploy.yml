@@ -1,9 +1,5 @@
 name: Deploy website
 
-# Note: GitHub automatically disables scheduled workflows after 60 days of
-# repository inactivity. If the schedule stops, push a commit or manually
-# trigger via workflow_dispatch to re-enable it.
-
 on:
   push:
     branches:
@@ -13,7 +9,7 @@ on:
     - cron: '0 * * * *'
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -35,7 +31,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: npm
           cache-dependency-path: site/package-lock.json
 
@@ -44,6 +40,21 @@ jobs:
 
       - name: Fetch latest documents
         run: npm run fetch
+
+      - name: Commit updated data
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        working-directory: .
+        run: |
+          if git diff --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add site/public/data/documents.json
+          git commit -m "chore: auto update documents data [skip ci]"
+          git push
+        continue-on-error: true
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
