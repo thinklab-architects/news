@@ -1,6 +1,30 @@
 {
   "documents": [
     {
+      "date": "2026-04-22",
+      "subject": "檢送本會福利委員會115年下半年度國內旅遊活動報名簡章、行程\t簡介及報名表各...",
+      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5804",
+      "deadline": "2026-05-11",
+      "attachments": [
+        {
+          "label": "附檔",
+          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5804/41bb26feef661d5170de65b76fe48ce4"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-22",
+      "subject": "主旨：本會訂於115年5月23日（星期六）舉辦電影欣賞活動，本次放映時間預定...",
+      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5805",
+      "deadline": "2026-05-11",
+      "attachments": [
+        {
+          "label": "附檔",
+          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5805/92ac0b61e16e7cff4c919df3a2ef7ff9"
+        }
+      ]
+    },
+    {
       "date": "2026-03-24",
       "subject": "(領取通知)：有購買全國建築師公會出版「(115年版)建築技術規則」之各位會...",
       "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5783",
@@ -1120,31 +1144,7 @@
           "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5513/e5a7b205043270be33c0dd21f6dbbf21"
         }
       ]
-    },
-    {
-      "date": "2024-09-10",
-      "subject": "擬繼續參加明年度(114年度)高雄地方法院民事執行處、橋頭地方法院民事執行處...",
-      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5505",
-      "deadline": "2024-09-27",
-      "attachments": [
-        {
-          "label": "附檔",
-          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5505/5fe62f4e8d495bb99e83e311bdb82aa5"
-        }
-      ]
-    },
-    {
-      "date": "2024-09-05",
-      "subject": "報名成功名單-113/09/12「2024建築技術規則及綠建築錯誤樣態實務課...",
-      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5499",
-      "deadline": "2024-09-12",
-      "attachments": [
-        {
-          "label": "附檔",
-          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5499/d19d342817fc91e2d25cea501c30aecb"
-        }
-      ]
     }
   ],
-  "updatedAt": "2026-04-23T07:33:45.580Z"
+  "updatedAt": "2026-04-23T08:35:01.055Z"
 }
