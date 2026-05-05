@@ -1,6 +1,18 @@
 {
   "documents": [
     {
+      "date": "2026-05-05",
+      "subject": "因應本公會修訂會員業務酬金代收轉付辦法退撥酬金辦理章程，115年度5月至12...",
+      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5811",
+      "deadline": "2026-12-25",
+      "attachments": [
+        {
+          "label": "附檔",
+          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5811/bab8e7579d32df1e7e58896fb2a919f3"
+        }
+      ]
+    },
+    {
       "date": "2026-04-22",
       "subject": "檢送本會福利委員會115年下半年度國內旅遊活動報名簡章、行程\t簡介及報名表各...",
       "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5804",
@@ -1132,19 +1144,7 @@
           "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5510/bcd15d9f3a50c353ffd7fe95c2acb4be"
         }
       ]
-    },
-    {
-      "date": "2024-09-18",
-      "subject": "轉知全建會：有關本會辦理「建築師執業手冊」編撰工作(手冊大綱目錄如附件)，請...",
-      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5513",
-      "deadline": "2024-10-15",
-      "attachments": [
-        {
-          "label": "附檔",
-          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5513/e5a7b205043270be33c0dd21f6dbbf21"
-        }
-      ]
     }
   ],
-  "updatedAt": "2026-05-05T05:02:18.207Z"
+  "updatedAt": "2026-05-05T06:44:13.539Z"
 }
