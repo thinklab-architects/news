@@ -1,6 +1,18 @@
 {
   "documents": [
     {
+      "date": "2026-05-11",
+      "subject": "主旨：徵求有意願參與「115年度高雄市建築物公共安全巡查作業」之建築師，如說...",
+      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5815",
+      "deadline": "2026-05-19",
+      "attachments": [
+        {
+          "label": "附檔",
+          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5815/9ee21652f17c89961cc49a8830ac1b9a"
+        }
+      ]
+    },
+    {
       "date": "2026-05-05",
       "subject": "修訂本會會員業務酬金代收轉付辦法第五條，退款登記日如遇假日則提前截止不順延，...",
       "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5812",
@@ -1132,19 +1144,7 @@
           "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5511/3528d82f811e68fa55f3259abf6e1e19"
         }
       ]
-    },
-    {
-      "date": "2024-09-23",
-      "subject": "公告：113年9月25日法益講座-「最有利標競標策略」報名成功名單，名單詳如...",
-      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5510",
-      "deadline": "2024-09-25",
-      "attachments": [
-        {
-          "label": "附檔",
-          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5510/bcd15d9f3a50c353ffd7fe95c2acb4be"
-        }
-      ]
     }
   ],
-  "updatedAt": "2026-05-11T01:35:29.292Z"
+  "updatedAt": "2026-05-11T03:05:12.706Z"
 }
