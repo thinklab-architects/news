@@ -1,6 +1,18 @@
 {
   "documents": [
     {
+      "date": "2026-05-14",
+      "subject": "公告：檢送115年5月23日(六)下午電影欣賞會活動-\"讓建築歌唱～許亞英的...",
+      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5818",
+      "deadline": "2026-05-21",
+      "attachments": [
+        {
+          "label": "附檔",
+          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5818/7cdf48313e7940dce4675d1ed7b0072e"
+        }
+      ]
+    },
+    {
       "date": "2026-05-13",
       "subject": "公告：115年度高雄市建築物公安抽複查 -- 第一批抽複查案件時程名冊，請參...",
       "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5817",
@@ -1137,14 +1149,7 @@
       "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5516",
       "deadline": "2024-10-11",
       "attachments": []
-    },
-    {
-      "date": "2024-10-01",
-      "subject": "公告: 原訂10/5(六)及10/6(日)辦理之\"屏東春日鄉老七佳石板屋部落...",
-      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5515",
-      "deadline": "2024-10-06",
-      "attachments": []
     }
   ],
-  "updatedAt": "2026-05-14T05:16:39.989Z"
+  "updatedAt": "2026-05-14T06:58:43.544Z"
 }
