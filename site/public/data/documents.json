@@ -1,6 +1,18 @@
 {
   "documents": [
     {
+      "date": "2026-05-20",
+      "subject": "公告：115年5月23日(六)下午14:00分電影欣賞會活動-《讓建築歌唱 ...",
+      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5820",
+      "deadline": "2026-05-23",
+      "attachments": [
+        {
+          "label": "附檔",
+          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5820/09a73ec70608e5e9c31d2259d352a12f"
+        }
+      ]
+    },
+    {
       "date": "2026-05-14",
       "subject": "公告：檢送115年5月23日(六)下午電影欣賞會活動-\"讓建築歌唱～許亞英的...",
       "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5818",
@@ -1142,14 +1154,7 @@
           "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5517/25207589fa00c7d7a036846d5ec312b0"
         }
       ]
-    },
-    {
-      "date": "2024-10-03",
-      "subject": "重要訊息：本會10月4日會員座談會，因颱風假停止上班，順延至10月11日同時...",
-      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5516",
-      "deadline": "2024-10-11",
-      "attachments": []
     }
   ],
-  "updatedAt": "2026-05-20T05:20:41.091Z"
+  "updatedAt": "2026-05-20T07:10:25.242Z"
 }
