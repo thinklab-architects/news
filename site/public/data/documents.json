@@ -1,6 +1,18 @@
 {
   "documents": [
     {
+      "date": "2026-05-21",
+      "subject": "轉知中華民國全國建築師公會函：有關「建築師業別書面審核純益率調降」相關說明，...",
+      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5826",
+      "deadline": "",
+      "attachments": [
+        {
+          "label": "附檔",
+          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5826/2edfbd1c7949a62648cdfaed94a9d4c7"
+        }
+      ]
+    },
+    {
       "date": "2026-05-20",
       "subject": "公告：115年5月23日(六)下午14:00分電影欣賞會活動-《讓建築歌唱 ...",
       "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5820",
@@ -1142,19 +1154,7 @@
           "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5521/e2f6d6487a7616a43ff4c464d60d5d39"
         }
       ]
-    },
-    {
-      "date": "2024-10-07",
-      "subject": "重要通知：原定10/3鑑定講座-「建築設計之結構力學原理與實務應用」，延期至...",
-      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5517",
-      "deadline": "2024-10-22",
-      "attachments": [
-        {
-          "label": "附檔",
-          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5517/25207589fa00c7d7a036846d5ec312b0"
-        }
-      ]
     }
   ],
-  "updatedAt": "2026-05-27T03:05:40.071Z"
+  "updatedAt": "2026-05-27T05:28:35.366Z"
 }
