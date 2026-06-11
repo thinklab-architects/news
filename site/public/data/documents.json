@@ -1,6 +1,13 @@
 {
   "documents": [
     {
+      "date": "2026-06-11",
+      "subject": "主旨：本會訂於115年7月5日（星期日）舉辦電影欣賞活動，本次放映時間預定下...",
+      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5831",
+      "deadline": "2026-06-18",
+      "attachments": []
+    },
+    {
       "date": "2026-05-21",
       "subject": "轉知中華民國全國建築師公會函：有關「建築師業別書面審核純益率調降」相關說明，...",
       "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5826",
@@ -1142,19 +1149,7 @@
           "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5523/da511a9bb9302feacb21a6aa4aa477bc"
         }
       ]
-    },
-    {
-      "date": "2024-10-14",
-      "subject": "轉知：財團法人國家實驗研究院國家地震工程研究中心辦理私有建築物耐震弱層補強作...",
-      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5521",
-      "deadline": "2024-10-26",
-      "attachments": [
-        {
-          "label": "附檔",
-          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5521/e2f6d6487a7616a43ff4c464d60d5d39"
-        }
-      ]
     }
   ],
-  "updatedAt": "2026-06-11T00:38:47.305Z"
+  "updatedAt": "2026-06-11T01:49:31.055Z"
 }
