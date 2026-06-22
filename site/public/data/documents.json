@@ -1,6 +1,18 @@
 {
   "documents": [
     {
+      "date": "2026-06-22",
+      "subject": "公告：115年7月5日(日)電影欣賞會《盗音天才》第一次索票成功名單如附檔，...",
+      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5834",
+      "deadline": "2026-06-23",
+      "attachments": [
+        {
+          "label": "附檔",
+          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5834/855344e7a686dce26d7601ae36625bff"
+        }
+      ]
+    },
+    {
       "date": "2026-06-11",
       "subject": "主旨：本會訂於115年7月5日（星期日）舉辦電影欣賞活動，本次放映時間預定下...",
       "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5831",
@@ -1137,19 +1149,7 @@
           "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5525/c24fab17a2a8bf25d927c8834e19654d"
         }
       ]
-    },
-    {
-      "date": "2024-10-15",
-      "subject": "公告：113年10月16日法益講座-「建築師執行業務應注意之法律風險」報名成...",
-      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5523",
-      "deadline": "2024-10-16",
-      "attachments": [
-        {
-          "label": "附檔",
-          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5523/da511a9bb9302feacb21a6aa4aa477bc"
-        }
-      ]
     }
   ],
-  "updatedAt": "2026-06-22T01:49:39.016Z"
+  "updatedAt": "2026-06-22T03:06:47.749Z"
 }
