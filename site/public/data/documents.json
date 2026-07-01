@@ -1,6 +1,18 @@
 {
   "documents": [
     {
+      "date": "2026-07-01",
+      "subject": "重要公告：115年7月5日(日)下午13:45分電影欣賞會活動-《盗音天才》...",
+      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5841",
+      "deadline": "2026-07-05",
+      "attachments": [
+        {
+          "label": "附檔",
+          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5841/e85fd7081fbd4a83fe4d98c174315749"
+        }
+      ]
+    },
+    {
       "date": "2026-06-29",
       "subject": "公告：檢送115年7月5日(日)下午電影欣賞會活動-《盗音天才》，索票成功名...",
       "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5838",
@@ -8,7 +20,7 @@
       "attachments": [
         {
           "label": "附檔",
-          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5838/fe3affa4db6001d4af5612d2217d033e"
+          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5838/cbf6cc77c658a74681ee06b7edf5aad2"
         }
       ]
     },
@@ -1137,19 +1149,7 @@
       "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5528",
       "deadline": "",
       "attachments": []
-    },
-    {
-      "date": "2024-10-23",
-      "subject": "重要通知：因憲政檔案室將搬遷至大寮，自113年11月4日至113年11月22...",
-      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5527",
-      "deadline": "2024-11-24",
-      "attachments": [
-        {
-          "label": "附檔",
-          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5527/d0d3f139e107dc64a76b58437db33ebd"
-        }
-      ]
     }
   ],
-  "updatedAt": "2026-07-01T05:31:36.848Z"
+  "updatedAt": "2026-07-01T07:27:07.584Z"
 }
