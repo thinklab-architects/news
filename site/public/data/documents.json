@@ -1,6 +1,30 @@
 {
   "documents": [
     {
+      "date": "2026-07-22",
+      "subject": "公告：115年度建築師節全國建築師公益登山健行大會師「高雄果嶺自然公園及澄清...",
+      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5847",
+      "deadline": "2026-08-31",
+      "attachments": [
+        {
+          "label": "附檔",
+          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5847/b61984ce77271289411442e2638a7e15"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-22",
+      "subject": "檢送本會福利委員會115下半年度國外旅遊活動報名簡章、行程簡介及報名表各乙份...",
+      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5848",
+      "deadline": "2026-08-04",
+      "attachments": [
+        {
+          "label": "附檔",
+          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5848/000edf5569e2df098f47811b0ed4d2c1"
+        }
+      ]
+    },
+    {
       "date": "2026-07-01",
       "subject": "重要公告：115年7月5日(日)下午13:45分電影欣賞會活動-《盗音天才》...",
       "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5841",
@@ -1130,26 +1154,7 @@
       "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5526",
       "deadline": "2024-12-06",
       "attachments": []
-    },
-    {
-      "date": "2024-11-04",
-      "subject": "公告：本會113年10月29日辦理「113年度10月份建築工地勞工安全衛生」...",
-      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5532",
-      "deadline": "2024-11-29",
-      "attachments": [
-        {
-          "label": "附檔",
-          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5532/7e2128f752aee6f317972113c83aaed3"
-        }
-      ]
-    },
-    {
-      "date": "2024-10-25",
-      "subject": "2024台北國際建築建材暨產品展【限本會會員。本會不整編，由會員自行前往】\n...",
-      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5528",
-      "deadline": "",
-      "attachments": []
     }
   ],
-  "updatedAt": "2026-07-23T09:47:33.110Z"
+  "updatedAt": "2026-07-23T10:43:37.873Z"
 }
