@@ -1,6 +1,18 @@
 {
   "documents": [
     {
+      "date": "2026-09-01",
+      "subject": "(報名成功名單) 115/9/2 「2026建築技術規則及綠建築錯誤樣態實務...",
+      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5873",
+      "deadline": "2026-09-02",
+      "attachments": [
+        {
+          "label": "附檔",
+          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5873/bee596786fa3f61be0a2b159658c5a20"
+        }
+      ]
+    },
+    {
       "date": "2026-08-25",
       "subject": "本會115年9月30日 (三)假高雄市漢來大飯店巨蛋會館9樓龍鳳凰廳舉辦「2...",
       "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5865",
@@ -418,7 +430,7 @@
       "attachments": [
         {
           "label": "附檔",
-          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5588/f8514f223e775bd7dfc4a56dad0b7535"
+          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5588/93bf0e0a3e0e2633562528a6ce9df1ca"
         }
       ]
     },
@@ -1147,19 +1159,7 @@
       "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5540",
       "deadline": "2024-12-17",
       "attachments": []
-    },
-    {
-      "date": "2024-11-08",
-      "subject": "公告：本會汏換會議椅(詳照片)，請有需要之會員於113/11/12前至本會索...",
-      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5536",
-      "deadline": "2024-11-13",
-      "attachments": [
-        {
-          "label": "附檔",
-          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5536/49c1046266dda0f763268fff7d2df258"
-        }
-      ]
     }
   ],
-  "updatedAt": "2026-09-01T05:55:55.880Z"
+  "updatedAt": "2026-09-01T10:51:49.037Z"
 }
