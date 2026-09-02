@@ -1,6 +1,30 @@
 {
   "documents": [
     {
+      "date": "2026-09-02",
+      "subject": "隨函檢送本會優惠福利團保加表乙份(如附件)，欲參加之會員、事務所員工及眷屬，...",
+      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5874",
+      "deadline": "2026-09-24",
+      "attachments": [
+        {
+          "label": "附檔",
+          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5874/0c925ac212173325ec54d67eca33c6f0"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-02",
+      "subject": "本會訂於115年10月18日（星期日）舉辦電影欣賞活動，本次放映時間預定下午...",
+      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5875",
+      "deadline": "2026-09-18",
+      "attachments": [
+        {
+          "label": "附檔",
+          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5875/de70f34e99effc09b87f8af148aaa818"
+        }
+      ]
+    },
+    {
       "date": "2026-09-01",
       "subject": "(報名成功名單) 115/9/2 「2026建築技術規則及綠建築錯誤樣態實務...",
       "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5873",
@@ -1140,26 +1164,7 @@
           "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5544/39eba60bbab48182d2ecccbf1c1cb3ef"
         }
       ]
-    },
-    {
-      "date": "2024-11-15",
-      "subject": "主旨：本會訂於113年12月21日（星期六）舉辦電影欣賞活動，本次分二場次放...",
-      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5542",
-      "deadline": "2024-11-30",
-      "attachments": [
-        {
-          "label": "附檔",
-          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5542/276d99f2f6275a5632337c5d5069a848"
-        }
-      ]
-    },
-    {
-      "date": "2024-11-14",
-      "subject": "為配合本會辦理「113年度建築師節聯歡晚會」活動，擬調整113年12月17日...",
-      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5540",
-      "deadline": "2024-12-17",
-      "attachments": []
     }
   ],
-  "updatedAt": "2026-09-02T00:42:40.295Z"
+  "updatedAt": "2026-09-02T05:17:40.182Z"
 }
