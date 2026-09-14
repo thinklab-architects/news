@@ -1,6 +1,18 @@
 {
   "documents": [
     {
+      "date": "2026-09-14",
+      "subject": "公告：115年度高雄市建築物公安抽複查 -- 第二批抽複查案件時程名冊，請參...",
+      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5882",
+      "deadline": "2026-10-16",
+      "attachments": [
+        {
+          "label": "附檔",
+          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5882/995a8e797b2bfaf16d84dbf4db513dc7"
+        }
+      ]
+    },
+    {
       "date": "2026-09-10",
       "subject": "隨函檢送本會116年度會員輪值服務工作報名表乙份(如附件)，請有意願且符合輪...",
       "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5881",
@@ -1152,19 +1164,7 @@
           "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5552/44370f169e9fcbbfc69858b574721686"
         }
       ]
-    },
-    {
-      "date": "2024-12-05",
-      "subject": "公告：113年12月6日法益講座-「政府採購之爭議處理」報名成功名單，名單詳...",
-      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5550",
-      "deadline": "2024-12-06",
-      "attachments": [
-        {
-          "label": "附檔",
-          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5550/32dd964bb3fc12cf793293e79fe21b46"
-        }
-      ]
     }
   ],
-  "updatedAt": "2026-09-13T23:54:30.881Z"
+  "updatedAt": "2026-09-14T02:37:49.433Z"
 }
