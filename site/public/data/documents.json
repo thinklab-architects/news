@@ -1,6 +1,18 @@
 {
   "documents": [
     {
+      "date": "2026-10-01",
+      "subject": "公告：檢送115年10月18日(日)下午電影欣賞會活動-《挖掘者》，索票成功...",
+      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5889",
+      "deadline": "2026-10-16",
+      "attachments": [
+        {
+          "label": "附檔",
+          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5889/12ef89bc18e83ff9cd21a1b469087849"
+        }
+      ]
+    },
+    {
       "date": "2026-09-22",
       "subject": "(已索完)公告：115年10月18日（日）電影欣賞活動-\"挖掘者\"第二次索票...",
       "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5886",
@@ -1147,19 +1159,7 @@
           "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5554/19b5e84e9c1d5527339d7de124a8d013"
         }
       ]
-    },
-    {
-      "date": "2024-12-13",
-      "subject": "113年度建築師節聯歡晚會會員揪團共桌桌號表，請下載。",
-      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5553",
-      "deadline": "2024-12-17",
-      "attachments": [
-        {
-          "label": "附檔",
-          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5553/c7c1f1d6ef63aa46fae88a257da1c20a"
-        }
-      ]
     }
   ],
-  "updatedAt": "2026-10-01T00:56:26.306Z"
+  "updatedAt": "2026-10-01T06:45:48.352Z"
 }
