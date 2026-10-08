@@ -1,6 +1,18 @@
 {
   "documents": [
     {
+      "date": "2026-10-08",
+      "subject": "本會自 115年 10月 12日起，調整「建照委審業務」受理案件類型，請參閱",
+      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5898",
+      "deadline": "2027-10-08",
+      "attachments": [
+        {
+          "label": "附檔",
+          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5898/de367df8ea323dda5ddb872bee057316"
+        }
+      ]
+    },
+    {
       "date": "2026-10-01",
       "subject": "公告：檢送115年10月18日(日)下午電影欣賞會活動-《挖掘者》，索票成功...",
       "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5889",
@@ -1147,19 +1159,7 @@
           "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5556/27befba9300d14a0f6fd2fc2884263d3"
         }
       ]
-    },
-    {
-      "date": "2024-12-16",
-      "subject": "中華民國全國建築師公會出版社，訂於114年1月底出版「建築技術規則(114年...",
-      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5554",
-      "deadline": "2024-12-30",
-      "attachments": [
-        {
-          "label": "附檔",
-          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5554/19b5e84e9c1d5527339d7de124a8d013"
-        }
-      ]
     }
   ],
-  "updatedAt": "2026-10-08T00:37:32.591Z"
+  "updatedAt": "2026-10-08T06:52:52.803Z"
 }
