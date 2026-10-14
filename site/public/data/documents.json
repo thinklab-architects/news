@@ -1,6 +1,18 @@
 {
   "documents": [
     {
+      "date": "2026-10-14",
+      "subject": "重要公告：115年10月18日(日)下午13:50分電影欣賞會活動-《挖掘者...",
+      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5900",
+      "deadline": "2026-10-18",
+      "attachments": [
+        {
+          "label": "附檔",
+          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5900/06495f075f7478ccbb1985c5679572ba"
+        }
+      ]
+    },
+    {
       "date": "2026-10-08",
       "subject": "本會自 115年 10月 12日起，調整「建照委審業務」受理案件類型，請參閱",
       "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5898",
@@ -1147,19 +1159,7 @@
           "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5558/1b0a56521405addc7bdca96349a59193"
         }
       ]
-    },
-    {
-      "date": "2024-12-19",
-      "subject": "公告：113年12月21日電影欣賞活動注意事項，請至相關檔案點閱下載",
-      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5556",
-      "deadline": "2024-12-23",
-      "attachments": [
-        {
-          "label": "附檔",
-          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5556/27befba9300d14a0f6fd2fc2884263d3"
-        }
-      ]
     }
   ],
-  "updatedAt": "2026-10-14T05:39:19.876Z"
+  "updatedAt": "2026-10-14T10:55:07.165Z"
 }
