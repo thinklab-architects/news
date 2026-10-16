@@ -25,6 +25,18 @@
       ]
     },
     {
+      "date": "2026-10-06",
+      "subject": "本會增列「高雄市簡易室內裝修案件」審查業務及收費標準表，自115年11月1日...",
+      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5902",
+      "deadline": "",
+      "attachments": [
+        {
+          "label": "附檔",
+          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5902/a2e83f6fdbd5660cc6d070f4212a2804"
+        }
+      ]
+    },
+    {
       "date": "2026-10-01",
       "subject": "公告：檢送115年10月18日(日)下午電影欣賞會活動-《挖掘者》，索票成功...",
       "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5889",
@@ -1147,19 +1159,7 @@
           "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5559/7dfe22f7daac086cc796b537da730fba"
         }
       ]
-    },
-    {
-      "date": "2024-12-23",
-      "subject": "檢附本會「114、115年度建築物室內裝修審查工作報名表」乙份，請符合資格且...",
-      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5558",
-      "deadline": "2024-12-27",
-      "attachments": [
-        {
-          "label": "附檔",
-          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5558/1b0a56521405addc7bdca96349a59193"
-        }
-      ]
     }
   ],
-  "updatedAt": "2026-10-15T23:28:10.204Z"
+  "updatedAt": "2026-10-16T02:27:58.662Z"
 }
