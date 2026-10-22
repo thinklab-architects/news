@@ -1,6 +1,18 @@
 {
   "documents": [
     {
+      "date": "2026-10-22",
+      "subject": "重要公告：檢送115年10月26日建築師節全國建築師公益登山健行大會師「高雄...",
+      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5908",
+      "deadline": "2026-10-26",
+      "attachments": [
+        {
+          "label": "附檔",
+          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5908/c14592853891dad5609bb9c9a184dc19"
+        }
+      ]
+    },
+    {
       "date": "2026-10-14",
       "subject": "重要公告：115年10月18日(日)下午13:50分電影欣賞會活動-《挖掘者...",
       "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5900",
@@ -1147,19 +1159,7 @@
           "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5560/86887f1606eaf3d8116a281fe12cac5f"
         }
       ]
-    },
-    {
-      "date": "2024-12-24",
-      "subject": "轉知：高雄市政府工務局為有關本市建築工程施工中辦理申報地坪（或基礎）及各樓層...",
-      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5559",
-      "deadline": "",
-      "attachments": [
-        {
-          "label": "附檔",
-          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5559/7dfe22f7daac086cc796b537da730fba"
-        }
-      ]
     }
   ],
-  "updatedAt": "2026-10-22T01:07:05.171Z"
+  "updatedAt": "2026-10-22T06:53:07.973Z"
 }
