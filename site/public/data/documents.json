@@ -1,6 +1,18 @@
 {
   "documents": [
     {
+      "date": "2026-10-28",
+      "subject": "修訂本會會員業務酬金代收轉付辦法第五條，退款登記日如遇假日則提前截止不順延，...",
+      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5910",
+      "deadline": "2027-12-31",
+      "attachments": [
+        {
+          "label": "附檔",
+          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5910/dc31521b771fe55c301ce5b3bc3195c6"
+        }
+      ]
+    },
+    {
       "date": "2026-10-22",
       "subject": "重要公告：檢送115年10月26日建築師節全國建築師公益登山健行大會師「高雄...",
       "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5908",
@@ -1147,19 +1159,7 @@
           "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5563/30ed9c36e806ef80f094ac8ab5a229f5"
         }
       ]
-    },
-    {
-      "date": "2024-12-25",
-      "subject": "轉知：高雄市政府工務局為有關本市建築工程施工中辦理申報地坪（或基礎）及各樓層...",
-      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5560",
-      "deadline": "",
-      "attachments": [
-        {
-          "label": "附檔",
-          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5560/86887f1606eaf3d8116a281fe12cac5f"
-        }
-      ]
     }
   ],
-  "updatedAt": "2026-10-27T23:23:33.990Z"
+  "updatedAt": "2026-10-28T03:17:26.829Z"
 }
