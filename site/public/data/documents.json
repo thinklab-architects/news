@@ -13,6 +13,18 @@
       ]
     },
     {
+      "date": "2026-10-28",
+      "subject": "本會擬參與115年度「內政部國土管理署代辦建築物耐震能力詳細評估工作共同供應...",
+      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5911",
+      "deadline": "2026-11-11",
+      "attachments": [
+        {
+          "label": "附檔",
+          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5911/975c85499b468b0a9a4427fdc6c04cb5"
+        }
+      ]
+    },
+    {
       "date": "2026-10-22",
       "subject": "重要公告：檢送115年10月26日建築師節全國建築師公益登山健行大會師「高雄...",
       "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5908",
@@ -1147,19 +1159,7 @@
           "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5562/0836253e2a6c1002dfc3f44b8b38de68"
         }
       ]
-    },
-    {
-      "date": "2024-12-30",
-      "subject": "檢送本會114年度會員健康檢查補助辦法乙份(如附件一)，凡本(114)年度至...",
-      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5563",
-      "deadline": "2025-10-28",
-      "attachments": [
-        {
-          "label": "附檔",
-          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5563/30ed9c36e806ef80f094ac8ab5a229f5"
-        }
-      ]
     }
   ],
-  "updatedAt": "2026-10-28T21:27:43.021Z"
+  "updatedAt": "2026-10-29T01:26:28.095Z"
 }
