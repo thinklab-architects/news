@@ -1,6 +1,18 @@
 {
   "documents": [
     {
+      "date": "2026-11-26",
+      "subject": "主旨：本會訂於115年12月27日（星期日）舉辦電影欣賞活動，本次放映時間預...",
+      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5919",
+      "deadline": "2026-12-10",
+      "attachments": [
+        {
+          "label": "附檔",
+          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5919/4ab794b9eeddabc94c9bc786855f21ff"
+        }
+      ]
+    },
+    {
       "date": "2026-11-16",
       "subject": "主旨：本會訂於115年12月17日(星期四)下午6時，假高雄市漢來飯店巨蛋會...",
       "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5916",
@@ -1147,19 +1159,7 @@
       "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5570",
       "deadline": "2025-01-25",
       "attachments": []
-    },
-    {
-      "date": "2025-01-07",
-      "subject": "公告：114年第1次建管處召開「建管座談會」，預定於114年2月26日（星期...",
-      "subjectUrl": "https://www.kaa.org.tw/public_list_1_show.php?b=5567",
-      "deadline": "2025-01-24",
-      "attachments": [
-        {
-          "label": "附檔",
-          "url": "https://www.kaa.org.tw/download.php?b=publicdoc/5567/83187c2ef84ad9ab1e8e16b88a538431"
-        }
-      ]
     }
   ],
-  "updatedAt": "2026-11-26T03:18:57.390Z"
+  "updatedAt": "2026-11-26T13:23:34.574Z"
 }
